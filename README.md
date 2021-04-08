@@ -26,7 +26,7 @@ sudo -E python3 bootstrap.py --admin <admin-user-name>
 Вся конфигурация осуществляется через веб-интерфейс. В браузере нужно зайти на http://localhost и использовать логин и пароль администратора.
 
 1. Нажмите на кнопку Control Panel в правом верхнем углу
-![Control Panel](/images/control-panel-button2.png)
+<img src="/images/control-panel-button2.png" style="display: block;">
 2. В панели управления нажмите на кнопку Admin
 ![Admin Panel](/images/admin-access-button2.png)
 Это откроет панель администратора, где можно создавать и удалять пользователей, запускать и останавливать 
@@ -75,3 +75,9 @@ https:
     domains:
     - yourdomain.com
 ```
+3. Перезапустите прокси-сервер
+```bash
+sudo tljh-config reload proxy
+```
+
+После этого JupyterHub запросит сертификаты у Let's Encrypt и будет автоматически их обновлять каждые 3 месяца.
