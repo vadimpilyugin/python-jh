@@ -28,19 +28,19 @@ sudo -E python3 bootstrap.py --admin <admin-user-name>
 1. Нажмите на кнопку Control Panel в правом верхнем углу
 <img src="/images/control-panel-button2.png" style="display: block;">
 2. В панели управления нажмите на кнопку Admin
-![Admin Panel](/images/admin-access-button2.png)
+<img src="/images/admin-access-button2.png" style="display: block;">
 Это откроет панель администратора, где можно создавать и удалять пользователей, запускать и останавливать 
 3. В панели администратора нажмите на кнопку Add Users
-![Add Users](/images/add-users-button1.png)
+<img src="/images/add-users-button1.png" style="display: block;">
 4. Можно добавить сразу несколько пользователей, по одному на строку
-![Multiple users](/images/add-users-dialog1.png)
+<img src="/images/add-users-dialog1.png" style="display: block;">
 
 ### Настройка окружения
 
 User Environment это окружение, которое доступно всем пользователям. Администраторы могут устанавливать пакеты через sudo -E. 
 
 1. Залогиньтесь как администратор в JupyterHub и откройте окно терминала в веб-интерфейсе
-![Terminal window button](/images/new-terminal-button3.png)
+<img src="/images/new-terminal-button3.png" style="display: block;">
 2. Для установки пакетов воспользуйтесь командой conda
 ```bash
 sudo -E conda install -c <channel-name> <package-name>
